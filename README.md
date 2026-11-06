@@ -1,9 +1,10 @@
-# My Claude Code skills
+# Claude skills
 
 | Skill | What it does |
 |---|---|
-| `skills/cartoon-3d-short` | 55-70 s vertical cartoon story shorts: 2D characters in a 3D world, rendered with three.js + Remotion. From github.com/mromidev/claude-animated-shorts (MIT). |
-| `skills/video-effects` | 11 motion-graphics effects (Orbit, Glitch, Typewriter and more) for vertical videos, with a shared look so they read as one video. |
+| `skills/maestro-basocial` | Maestro BaSocial: the full production system for vertical animated story shorts, run as a team of specialist agents (research, script, voice, storyboard, world, characters, camera, animation, effects, sound, render, QA), with a binding production bible, a three.js engine and the soldier example. Say "use Maestro". |
 
 ## Install
-Copy each folder in `skills/` to `~/.claude/skills/` on your computer, then start Claude Code.
+Copy `skills/maestro-basocial` to `~/.claude/skills/` on your computer (or keep this repo attached to a cloud session), then start Claude Code.
+
+Credits: the bridge reference and the toon.ts character library come from github.com/mromidev/claude-animated-shorts (MIT). Its reference frames are for private style study only.

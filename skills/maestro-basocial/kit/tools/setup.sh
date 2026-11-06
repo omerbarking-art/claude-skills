@@ -7,7 +7,7 @@ mkdir -p "$P/web/lib" "$P/work" "$P/stills" "$P/out"
 cp "$KIT"/engine/*.js "$KIT"/engine/index.html "$P/web/"
 cp "$KIT"/example/soldier/story.js "$P/web/story.js"        # starting point: rewrite for the new story
 cp "$KIT"/example/soldier/audio.py "$P/audio.py"            # starting point: rewrite the cue table
-cp "$KIT"/tools/*.mjs "$KIT"/tools/*.py "$P/" 2>/dev/null || true
+cp "$KIT"/tools/*.mjs "$KIT"/tools/*.py "$KIT"/tools/finish.sh "$P/" 2>/dev/null || true
 # three.js r160 (module build). npm first, then a sparse git clone (works where only GitHub is reachable).
 if [ ! -f "$P/web/lib/three.module.js" ]; then
   ( cd /tmp && rm -rf _three && mkdir _three && cd _three && npm pack three@0.160.0 >/dev/null 2>&1 && tar xzf three-0.160.0.tgz && cp package/build/three.module.js "$P/web/lib/" ) \
