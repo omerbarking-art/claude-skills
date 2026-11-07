@@ -131,3 +131,6 @@ New videos should keep the soldier's look and reveal timing, and tighten the nar
 - Owner's text taste: no dark gradient bands behind text. Keep legibility with a tight dark halo around the glyphs; accent words in bright glowing flat orange (#ff9a3c with glow), not a brown gradient.
 - Show the "it's CGI" reveal visually a beat BEFORE the voice/text says it.
 - Phone-screen transitions: replace the phone screen with the next shot (perspective warp onto the screen quad) and move the camera through the screen by interpolating the quad corners to the frame corners. Continuous, no blend cut, no glitches.
+- Gemini TTS (sonic_boom) files end with a short digital burst about 0.1-0.15 s before the end (loud click then a dropout). Always trim the last 0.2 s of every Gemini voice file and fade out, then scan the final mix for spikes/dropouts at 10 ms resolution before sending.
+- Lip sync workflow that works for Hebrew: generate the clip in Seedance (draft first), make the Hebrew line in TTS, lip-sync it onto the clip with Lipsync 2.0, then take ONLY the picture from the lip-sync output and rebuild all sound from the source files with fades. Never reuse the lip-sync output audio (it carries cuts).
+- Running/chasing shouts: direct "out of breath from running, not from crying, no sobbing" or the model plays it as crying.
