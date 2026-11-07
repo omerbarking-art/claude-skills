@@ -122,3 +122,8 @@ New videos should keep the soldier's look and reveal timing, and tighten the nar
 5. No characters passing through objects. 6. No camera stopping without reason. 7. No unsynced sound.
 8. No change of character design between scenes. 9. Keep a fast, interesting pace. 10. Build curiosity before the answer.
 11. Use data and measurements, not just impressions. 12. Keep all rules in this bible and improve it after every video.
+
+## 14. Lessons from real productions
+- 2026-11-07 (Visual Impact balloon ad): MiniMax H3 adds its own audio track to every clip even without a sound option. It did not cost extra here, but always pass `withSoundEffects:false` / `noMusic` where the model allows it, check `simulate_cost` with the exact arguments, and strip clip audio in the edit (`-an`). Our sound is built separately.
+- AI video between two keyframes with a large camera swing (e.g. 180° from behind a person to in front of them) makes the model invent a new room mid-clip. Keep each AI clip's start and end frames close in angle; do big moves as several small clips or in code.
+- Hebrew on-screen text: thick sans (Heebo 800/900) reads premium; a thin serif read badly to the owner. Orange words on an orange background need a dark drop shadow and a soft dark band behind the line.
