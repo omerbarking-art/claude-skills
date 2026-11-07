@@ -4,6 +4,8 @@
 |---|---|
 | `.claude/skills/maestro-basocial` | Maestro BaSocial: the full production system for vertical animated story shorts, run as a team of specialist agents (research, script, voice, storyboard, world, characters, camera, animation, effects, sound, render, QA), with a binding production bible, a three.js engine and the soldier example. Say "use Maestro". |
 
+| `.claude/skills/human-writing` | The owner's writing rules (Human Prompt 2) plus the AI patterns to avoid. Clear, direct text with no emojis, hashtags or fluff. Say "human writing". |
+
 ## Install
 Copy `.claude/skills/maestro-basocial` to `~/.claude/skills/` on your computer (or keep this repo attached to a cloud session), then start Claude Code.
 
